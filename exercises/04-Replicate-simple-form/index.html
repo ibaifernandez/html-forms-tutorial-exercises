@@ -1,16 +1,129 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>4Geeks Academy</title>
+		<style>
+			body {
+				margin-top: 3rem;
+				font-family: Georgia, "Times New Roman", Times, serif;
+				display: flex;
+				justify-content: center;
+			}
+			table {
+				border: 1px solid black;
+			}
+			th {
+				background: lightblue;
+				border: 1px solid black;
+				padding: 5px 0 5px 3px;
+			}
+			td {
+				border: 1px solid black;
+				padding: 5px 0 5px 3px;
+			}
+			textarea {
+				margin-top: 0.5rem;
+			}
+			input::placeholder {
+				font-family: Georgia, "Times New Roman", Times, serif; /*Why 'inherit' won't work?*/
+			}
+			.button {
+				margin: 0 auto;
+				text-align: center;
+			}
+		</style>
+	</head>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>4Geeks Academy</title>
-</head>
+	<body>
+		<form>
+			<table>
+				<tr>
+					<th>Name</th>
 
-<body>
-    <form>
-        <!-- your code here -->
-    </form>
-</body>
+					<th>Value</th>
+				</tr>
 
+				<tr>
+					<td>Name</td>
+
+					<td>
+						<label for="name"></label>
+						<input id="name" name="name" placeholder="Your name" required />
+					</td>
+				</tr>
+
+				<tr>
+					<td>Sex</td>
+
+					<td>
+						<div>
+							<input id="sex-male" value="male" type="radio" name="sex" required />
+							<label for="sex-male">Male</label>
+						</div>
+
+						<div>
+							<input id="sex-female" value="female" type="radio" name="sex" required />
+							<label for="sex-female">Female</label>
+						</div>
+					</td>
+				</tr>
+
+				<tr>
+					<td>Eye Color</td>
+
+					<td>
+						<label for="eye-color">
+							<select id="eye-color" name="eye-color" required>
+								<option value="">Select the color of your eyes</option>
+								<option value="green">Green</option>
+								<option value="blue">Blue</option>
+								<option value="hazelnut">Hazelnut</option>
+								<option value="grey">Grey</option>
+								<option value="heterochromic">Heterochromic</option>
+								<option value="other">Other</option>
+							</select>
+						</label>
+					</td>
+				</tr>
+
+				<tr>
+					<td>Check all that apply</td>
+					<td>
+						<div>
+							<input id="body-characteristics-height" value="Over 6 feet tall" type="checkbox" name="body-characteristics" />
+							<label for="body-characteristics-height">Over 6 feet tall</label>
+						</div>
+
+						<div>
+							<input id="body-characteristics-weight" value="Over 200 pounds" type="checkbox" name="body-characteristics" />
+							<label for="body-characteristics-weight">Over 200 pounds</label>
+						</div>
+					</td>
+				</tr>
+
+				<tr>
+					<td colspan="2">
+						<div>
+							<label for="athletic-ability">Describe your athletic ability:</label>
+						</div>
+						<textarea
+							id="athletic-ability"
+							name="athletic-ability"
+							rows="4"
+							cols="50"
+							placeholder="Describe your athletic ability here"
+						></textarea>
+					</td>
+				</tr>
+
+				<tr>
+					<td colspan="2" class="button">
+						<input type="submit" value="Enter my information" />
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
 </html>

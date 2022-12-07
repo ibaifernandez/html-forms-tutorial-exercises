@@ -1,0 +1,37 @@
+body {
+	background: #072657;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+input {
+	border: 0;
+	background: #051a3d;
+	margin: 0 0 1rem 0;
+	padding: 1rem 2rem 1rem 0.25rem;
+	border-radius: 0.25rem;
+}
+
+button {
+	border-radius: 0.25rem;
+	border: 0;
+	background: #4874d7;
+	padding: 1.25rem;
+	color: white;
+	font-weight: bold;
+	box-shadow: 2px 2px 2px black;
+}
+
+.login {
+	width: 30%;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	color: white;
+}
